@@ -1,0 +1,46 @@
+/*
+BASE CSS
+*/
+*{
+    font-family: 'Lato', sans-serif;
+}
+p {
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+[class*='button-'] {
+    border-radius: 2px;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    font-size: 16px;
+    &.small {
+        padding: 5px 7px;
+        font-size: 12px;
+    }
+    svg {
+        margin-right: 10px
+    }
+}
+
+.button-clear {
+    border: none;
+    color: #bbb;
+    background: transparent;
+}
+
+.button-danger {
+    border: none;
+    color: #fff;
+    background: #e74c3c;
+}
+
+.thumbnail {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+

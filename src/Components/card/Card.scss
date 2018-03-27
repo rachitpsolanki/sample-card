@@ -1,0 +1,155 @@
+/*
+CARD CSS
+*/
+.card {
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(204, 204, 204, 1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(204, 204, 204, 1);
+    box-shadow: 0px 0px 5px 1px rgba(204, 204, 204, 1);
+    border-radius: 5px;
+    .card-img {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+    .title p {
+        margin: 0px;
+        line-height: 1;
+    }
+    .container {
+        padding: 15px 20px;
+    }
+}
+
+/*
+HEADER CSS
+*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    .avatar-item {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        .title-container {
+            padding-left: 15px;
+            .title {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .description {
+                font-size: 14px;
+                color: #bbb;
+            }
+        }
+    }
+    .button-danger {
+        text-transform: uppercase;
+    }
+}
+
+/*
+ARTICLE CSS
+*/
+
+.article-container {
+    .article-topic {
+        text-transform: uppercase;
+        color: #bbb;
+        font-size: 16px;
+        padding: 10px 0px;
+        
+    }
+    .article-title {
+        font-size: 28px;
+        font-weight: bold;
+        padding: 10px 0px;
+    }
+    .article-description{
+        padding: 10px 0px;                
+    }
+    .article-details {
+        padding: 15px 0px;
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        button {
+            &:hover {
+                background-color: #304FFE;
+                color: #fff;
+            }
+        }
+        .article-revenue {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
+/*
+BACKER CSS
+*/
+
+.backers-container {
+    padding: 15px 0px;
+    .backers-title {
+        font-size: 14px;
+        color: #bbb;
+    }
+    .backers-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        padding: 5px 0px;
+        .thumbnail {
+            margin-right: 5px
+        }
+    }
+    .hoverDiv {
+        display: block;
+        span {
+            position: absolute;
+            height: 40px;
+            margin-top: -80px;
+            width: 150px;
+            background: #f1c40f;
+            padding: 10px;
+            color: #fff;
+            border-radius: 2px;
+            svg {
+                position: absolute;
+                color: #f1c40f;
+                bottom: -8px;
+                left: 2px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+/*
+SOCIAL CSS
+*/
+.social-counts {
+    padding: 15px 0px; 
+    list-style-type: none;
+    display: block;
+
+    li {
+        display: inline-block;
+        svg{
+            margin-right: 10px;
+        }
+        &:hover {
+            color: #304FFE;
+        }
+        &:not(:first-child):not(:last-child){
+            margin: 0px 30px;
+        }
+    }
+}
+
